@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "argon2": "^0.41.1",
+    "express": "^4.21.1",
+    "mysql2": "^3.11.4"
+  },
+  "name": "portal-web-con-base-api",
+  "version": "1.0.0",
+  "description": "Aqui se acumularan los avances en codigo del desarrollo del sitio web para la empresa AIC Propiedades",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
