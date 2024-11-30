@@ -8,7 +8,7 @@ body {
 
 /* Encabezado */
 header {
-    background-color: #333;
+    background-color: #1d3557;
     color: #fff;
     display: flex;
     align-items: center;
@@ -52,9 +52,18 @@ header nav ul li a:hover {
 
 main {
     padding: 20px;
+    background-color: #f1faee;
 }
+button, .btn {
+    background-color: #f4a261;
+    color: #fff;
+}
+button:hover, .btn:hover {
+    background-color: #e07b5d;
+}
+
 footer {
-    background: #333;
+    background: #1d3557;
     color: #fff;
     text-align: center;
     padding: 1rem 0;
