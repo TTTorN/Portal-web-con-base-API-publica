@@ -3,54 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
+    <meta name="description" content="Encuentra las mejores propiedades con AIC Propiedades. Casas, departamentos y terrenos en venta y arriendo.">
+    <meta name="keywords" content="propiedades, casas, departamentos, terrenos, arriendo, venta">
+
+    <title>AIC Propiedades - Inicio</title>
+    <!-- Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Archivo CSS -->
     <link rel="stylesheet" href="inicio.css">
 </head>
 <body>
+    <!-- Encabezado -->
     <header>
-        <div class="logo-container">
-            <img src="imagenes/logoAICPropiedades.jpeg" alt="Logo de la empresa" class="logo">
-            <span class="nombre-empresa">AIC Propiedades</span>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#nosotros">Nosotros</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">AIC Propiedades</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
+
+    <!-- Contenido Principal -->
     <main>
-        <section id="inicio">
-            <h1>Bienvenidos a MiEmpresa</h1>
+        <!-- Seccion de Bienvenida -->
+        <section id="inicio" class="text-center p-5 bg-light">
+            <h1>Bienvenidos a AIC Propiedades</h1>
             <p>Tu solucion en servicios informativos.</p>
         </section>
+
         <section id="nosotros">
             <h2>Sobre Nosotros</h2>
             <p>Informacion sobre la empresa.</p>
         </section>
+
         <section id="servicios">
             <h2>Servicios</h2>
             <p>Detalle de servicios o productos ofrecidos.</p>
+            <!-- Integracion de formulario interactivo -->
+            <div class="container my-5">
+                <form>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" placeholder="Ubicación">
+                        </div>
+                        <div class="col-md-4">
+                            <select class="form-control">
+                                <option>Tipo de Propiedad</option>
+                                <option>Casa</option>
+                                <option>Departamento</option>
+                                <option>Terreno</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <button type="submit" class="btn btn-primary w-100">Buscar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </section>
+
+        <section id="testimonios" class="my-5">
+            <h2 class="text-center">Testimonios de Clientes</h2>
+            <div id="testimonialcarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <p>"Excelente servicio, muy profesionales."</p>
+                        <h5>- Juan Pérez</h5>
+                    </div>
+                    <div class="carousel-item">
+                        <p>Encontré la casa de mis sueños gracias a ellos.</p>
+                        <h5>- María López</h5>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#testimonialCarousel" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </a>
+                <a class="carousel-control-next" href="#testimonialCarousel" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </a>
+            </div>
+        </section>
+
+        <!-- IMPORTANTE REVISAR -->
         <section id="contacto">
             <h2>Contacto</h2>
-            <form>
-                <input type="text" placeholder="Nombre" required>
-                <input type="email" placeholder="Correo" required>
-                <textarea placeholder="Mensaje" required></textarea>
+            <form action="/ruta en el servidor para procesar el formulario" method="post">
+                <input type="text" placeholder="Nombre" name="nombre" class="form-control mb-3" required>
+                <input type="email" placeholder="Correo" name="correo" class="form-control mb-3" required>
+                <textarea placeholder="Mensaje" name="mensaje" class="form-control mb-3" required></textarea>
+                <!-- Integracion de Google reCAPTCHA -->
+                 <div class="g-recaptcha mb-3" data-sitekey="aqui va la key de google recaptcha despues de registrar el dominio"></div>
                 <button type="submit">Enviar</button>
             </form>
         </section>
+
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     </main>
-    <footer>
-        <p>&copy; 2024 MIEmpresa. Todos los derechos reservados.</p>
+
+    <!-- Pie de Pagina -->
+    <footer class="text-center bg-dark text-white p-3">
+        <p>&copy; 2024 AIC Propiedades. Todos los derechos reservados.</p>
         <div class="social">
             <a href="#">Facebook</a>
             <a href="#">Instagram</a>
             <a href="#">LinkedIn</a>
         </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
