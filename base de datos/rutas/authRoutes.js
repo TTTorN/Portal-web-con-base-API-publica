@@ -25,7 +25,7 @@ router.post('/registro', async (req, res) => {
 });
 
 router.post('/login', async (req, res) => {
-    const { email, password } = requ.body;
+    const { email, password } = req.body;
 
     const sql = 'SELECT * FROM usuarios WHERE email = ?';
     db.query(sql, [email], async (err, results) => {
