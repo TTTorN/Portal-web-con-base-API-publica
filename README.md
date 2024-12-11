@@ -1,2 +1,2 @@
-# Portal-web-con-base-API
-Aqui se acumularan los avances en codigo del desarrollo del sitio web para la empresa AIC Propiedades
+# Portal-web-con-base-API Dinamica
+Aqui iré acumulando pruebas para sitio web dinamico con express y ejs
