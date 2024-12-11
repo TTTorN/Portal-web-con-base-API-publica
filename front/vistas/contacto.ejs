@@ -1,0 +1,15 @@
+<!-- IMPORTANTE REVISAR -->
+<%- include('layout', { title: 'AIC Propiedades - Contacto', body: '
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form action="/ruta en el servidor para procesar el formulario" method="post">
+            <input type="text" placeholder="Nombre" name="nombre" class="form-control mb-3" required>
+            <input type="email" placeholder="Correo" name="correo" class="form-control mb-3" required>
+            <textarea placeholder="Mensaje" name="mensaje" class="form-control mb-3" required></textarea>
+            <!-- Integracion de Google reCAPTCHA -->
+            <div class="g-recaptcha mb-3" data-sitekey="aqui va la key de google recaptcha despues de registrar el dominio"></div>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+'}) %>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
