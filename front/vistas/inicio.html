@@ -24,29 +24,7 @@
 </head>
 <body>
     <!-- Encabezado -->
-    <header>
-        <div class="logo-container">
-            <a href="/front/vistas/inicio.html">
-                <img src="../estaticos/logoAICPropiedades.jpeg" alt="Logo de AIC Propiedades" class="logo">
-            </a>
-        </div>
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="container">
-                <a class="navbar-brand" href="/front/vistas/inicio.html">AIC Propiedades</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item"><a class="nav-link" href="/front/vistas/inicio.html">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/front/vistas/nosotros.html">Nosotros</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/front/vistas/servicios.html">Servicios</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/front/vistas/contacto.html">Contacto</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
+    <div id="header"></div>
 
     <!-- Contenido Principal -->
     <main>
@@ -54,37 +32,6 @@
         <section id="inicio" class="text-center p-5 bg-light">
             <h1>Bienvenidos a AIC Propiedades</h1>
             <p>Tu solucion en servicios informativos.</p>
-        </section>
-
-        <section id="nosotros">
-            <h2>Sobre Nosotros</h2>
-            <p>Informacion sobre la empresa.</p>
-        </section>
-
-        <section id="servicios">
-            <h2>Servicios</h2>
-            <p>Detalle de servicios o productos ofrecidos.</p>
-            <!-- Integracion de formulario interactivo -->
-            <div class="container my-5">
-                <form>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <input type="text" class="form-control" placeholder="Ubicación">
-                        </div>
-                        <div class="col-md-4">
-                            <select class="form-control">
-                                <option>Tipo de Propiedad</option>
-                                <option>Casa</option>
-                                <option>Departamento</option>
-                                <option>Terreno</option>
-                            </select>
-                        </div>
-                        <div class="col-md-4">
-                            <button type="submit" class="btn btn-primary w-100">Buscar</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
         </section>
 
         <section id="testimonios" class="my-5">
@@ -108,32 +55,11 @@
                 </a>
             </div>
         </section>
-
-        <!-- IMPORTANTE REVISAR -->
-        <section id="contacto">
-            <h2>Contacto</h2>
-            <form action="/ruta en el servidor para procesar el formulario" method="post">
-                <input type="text" placeholder="Nombre" name="nombre" class="form-control mb-3" required>
-                <input type="email" placeholder="Correo" name="correo" class="form-control mb-3" required>
-                <textarea placeholder="Mensaje" name="mensaje" class="form-control mb-3" required></textarea>
-                <!-- Integracion de Google reCAPTCHA -->
-                 <div class="g-recaptcha mb-3" data-sitekey="aqui va la key de google recaptcha despues de registrar el dominio"></div>
-                <button type="submit">Enviar</button>
-            </form>
-        </section>
-
-        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     </main>
 
     <!-- Pie de Pagina -->
-    <footer class="text-center bg-dark text-white p-3">
-        <p>&copy; 2024 AIC Propiedades. Todos los derechos reservados.</p>
-        <div class="social-icons">
-            <a href="https://facebook.com/aicpropiedades" target="_blank">Facebook</a>
-            <a href="https://instagram.com/aicpropiedades" target="_blank">Instagram</a>
-            <a href="https://linkedin.com/company/aicpropiedades" target="_blank">LinkedIn</a>
-        </div>
-    </footer>
+    <div id="footer"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="/bd/rutas/app.js"></script>
 </body>
 </html>

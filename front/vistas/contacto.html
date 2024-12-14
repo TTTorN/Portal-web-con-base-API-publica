@@ -20,7 +20,7 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
     <!-- Archivo CSS -->
-    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="/front/estaticos/stylesheet.css">
 </head>
 <body>
     <!-- Encabezado -->
@@ -28,65 +28,7 @@
 
     <!-- Contenido Principal -->
     <main>
-        <!-- Seccion de Bienvenida -->
-        <section id="inicio" class="text-center p-5 bg-light">
-            <h1>Bienvenidos a AIC Propiedades</h1>
-            <p>Tu solucion en servicios informativos.</p>
-        </section>
-
-        <section id="nosotros">
-            <h2>Sobre Nosotros</h2>
-            <p>Informacion sobre la empresa.</p>
-        </section>
-
-        <section id="servicios">
-            <h2>Servicios</h2>
-            <p>Detalle de servicios o productos ofrecidos.</p>
-            <!-- Integracion de formulario interactivo -->
-            <div class="container my-5">
-                <form>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <input type="text" class="form-control" placeholder="Ubicación">
-                        </div>
-                        <div class="col-md-4">
-                            <select class="form-control">
-                                <option>Tipo de Propiedad</option>
-                                <option>Casa</option>
-                                <option>Departamento</option>
-                                <option>Terreno</option>
-                            </select>
-                        </div>
-                        <div class="col-md-4">
-                            <button type="submit" class="btn btn-primary w-100">Buscar</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </section>
-
-        <section id="testimonios" class="my-5">
-            <h2 class="text-center">Testimonios de Clientes</h2>
-            <div id="testimonialcarousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <p>"Excelente servicio, muy profesionales."</p>
-                        <h5>- Juan Pérez</h5>
-                    </div>
-                    <div class="carousel-item">
-                        <p>Encontré la casa de mis sueños gracias a ellos.</p>
-                        <h5>- María López</h5>
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#testimonialCarousel" role="button" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                </a>
-                <a class="carousel-control-next" href="#testimonialCarousel" role="button" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                </a>
-            </div>
-        </section>
-
+        
         <!-- IMPORTANTE REVISAR -->
         <section id="contacto">
             <h2>Contacto</h2>
@@ -106,5 +48,6 @@
     <!-- Pie de Pagina -->
     <div id="footer"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="/bd/rutas/app.js"></script>
 </body>
 </html>

@@ -20,7 +20,7 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
     <!-- Archivo CSS -->
-    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="/front/estaticos/stylesheet.css">
 </head>
 <body>
     <!-- Encabezado -->
@@ -28,17 +28,6 @@
 
     <!-- Contenido Principal -->
     <main>
-        <!-- Seccion de Bienvenida -->
-        <section id="inicio" class="text-center p-5 bg-light">
-            <h1>Bienvenidos a AIC Propiedades</h1>
-            <p>Tu solucion en servicios informativos.</p>
-        </section>
-
-        <section id="nosotros">
-            <h2>Sobre Nosotros</h2>
-            <p>Informacion sobre la empresa.</p>
-        </section>
-
         <section id="servicios">
             <h2>Servicios</h2>
             <p>Detalle de servicios o productos ofrecidos.</p>
@@ -64,47 +53,11 @@
                 </form>
             </div>
         </section>
-
-        <section id="testimonios" class="my-5">
-            <h2 class="text-center">Testimonios de Clientes</h2>
-            <div id="testimonialcarousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <p>"Excelente servicio, muy profesionales."</p>
-                        <h5>- Juan Pérez</h5>
-                    </div>
-                    <div class="carousel-item">
-                        <p>Encontré la casa de mis sueños gracias a ellos.</p>
-                        <h5>- María López</h5>
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#testimonialCarousel" role="button" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                </a>
-                <a class="carousel-control-next" href="#testimonialCarousel" role="button" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                </a>
-            </div>
-        </section>
-
-        <!-- IMPORTANTE REVISAR -->
-        <section id="contacto">
-            <h2>Contacto</h2>
-            <form action="/ruta en el servidor para procesar el formulario" method="post">
-                <input type="text" placeholder="Nombre" name="nombre" class="form-control mb-3" required>
-                <input type="email" placeholder="Correo" name="correo" class="form-control mb-3" required>
-                <textarea placeholder="Mensaje" name="mensaje" class="form-control mb-3" required></textarea>
-                <!-- Integracion de Google reCAPTCHA -->
-                 <div class="g-recaptcha mb-3" data-sitekey="aqui va la key de google recaptcha despues de registrar el dominio"></div>
-                <button type="submit">Enviar</button>
-            </form>
-        </section>
-
-        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     </main>
 
     <!-- Pie de Pagina -->
     <div id="footer"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="/bd/rutas/app.js"></script>
 </body>
 </html>
