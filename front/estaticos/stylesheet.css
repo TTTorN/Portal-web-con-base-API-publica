@@ -3,7 +3,8 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f9fa;
+    background-color: #f0f4f8;
+    color: #333333;
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -11,8 +12,8 @@ body {
 
 /* Encabezado */
 header {
-    background-color: #1d3557;
-    color: #fff;
+    background-color: #003366;
+    color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -44,13 +45,13 @@ header nav ul li {
     margin: 0 15px;
 }
 header nav ul li a {
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
     font-size: 1rem;
     transition: color 0.3s;
 }
 header nav ul li a:hover {
-    color: #f4a261;
+    color: #4a90e2;
 }
 
 @media (min-width: 992px) {
@@ -126,20 +127,76 @@ header nav ul li a:hover {
 main {
     flex: 1;
     padding: 20px;
-    background-color: #f1faee;
+    background-color: #f0f4f8;
 }
 button, .btn {
-    background-color: #f4a261;
-    color: #fff;
+    background-color: #4a90e2;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
 }
 button:hover, .btn:hover {
-    background-color: #e07b5d;
+    background-color: #003366;
+    color: #ffffff;
 }
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: #003366;
+    border-radius: 60%;
+}
+/* Estilos para centrar y ajustar el ancho del carousel */
+#testimonios {
+    display: flex;
+    justify-content: center; /* Centra el carousel horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    margin: 0 auto; /* Márgenes automáticos para centrar */
+    padding: 2rem 0;
+}
+
+#testimonialcarousel {
+    width: 80%; /* Utiliza el 80% del ancho de la página */
+    max-width: 1000px; /* Establece un máximo para pantallas grandes */
+    background-color: #ffffff; /* Fondo blanco para contraste */
+    border-radius: 10px; /* Bordes redondeados para un diseño moderno */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    padding: 2rem; /* Espaciado interno */
+}
+
+.carousel-inner {
+    text-align: center; /* Centra los textos de los testimonios */
+}
+
+.carousel-item p {
+    font-size: 1.2rem; /* Tamaño de fuente más legible */
+    color: #333333; /* Color de texto oscuro */
+    margin-bottom: 1rem;
+}
+
+.carousel-item h5 {
+    font-size: 1rem; /* Tamaño de fuente del nombre */
+    color: #003366; /* Azul Oscuro */
+    font-weight: bold;
+}
+
+/* Botones de control del carousel */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%; /* Ajusta el tamaño de los controles */
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #003366; /* Color de fondo de los íconos */
+    border-radius: 50%; /* Hace los botones circulares */
+    padding: 10px;
+}
+
 
 /* Footer */
 .custom-footer {
-    background: #1d3557;
-    color: #fff;
+    background: #003366;
+    color: #ffffff;
     padding: 1rem 0;
     text-align: center;
     margin-top: 0;
@@ -155,7 +212,7 @@ button:hover, .btn:hover {
     min-width: 200px;
 }
 .footer-column h3 {
-    color: #f4a261;
+    color: #003366;
     margin-bottom: 10px;
 }
 .footer-menu {
@@ -166,13 +223,13 @@ button:hover, .btn:hover {
     margin-bottom: 5px;
 }
 .footer-menu a {
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
     font-size: 1rem;
     transition: color 0.3s ease;
 }
 .footer-menu a:hover {
-    color: #f4a261;
+    color: #4a90e2;
 }
 .footer-logo {
     max-width: 150px;
@@ -184,7 +241,7 @@ button:hover, .btn:hover {
 .social-icon {
     margin: 0 10px;
     text-decoration: none;
-    color: #fff;
+    color: #ffffff;
     font-size: 1.2rem;
     transition: color 0.3s ease;
 }
